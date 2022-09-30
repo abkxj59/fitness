@@ -1,0 +1,108 @@
+.promo {
+  background: $basic-gradient;
+  padding: 50px 0;
+  color: $color-default-white;
+}
+
+.promo__container {
+  display: flex;
+}
+
+.promo__text {
+  text-align: end;
+  margin-right: 65px;
+}
+
+.promo p {
+  margin-top: 122px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-family: $font-bebas;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 24px;
+  }
+}
+
+.promo__heading {
+  display: flex;
+  padding-top: 12px;
+}
+
+.promo h1 {
+  margin-top: 0;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  font-family: $font-bebas;
+  font-weight: 700;
+  font-size: 109px;
+  line-height: 109px;
+  letter-spacing: 0.03em;
+
+  @include vp-1199 {
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  @include vp-767 {
+    font-size: 78px;
+    line-height: 78px;
+  }
+}
+
+.promo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.promo__heading ul {
+  padding-left: 20px;
+  margin-top: 122px;
+  margin-right: -34px;
+}
+
+.promo a {
+  color: inherit;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  &:hover {
+    text-shadow: 0px 0px 6px $color-default-black;
+    box-shadow: 0px 0px 6px $color-default-black;
+    color: rgba(255,255,255,0.5);
+    border-color: rgba(255,255,255,0.5);
+  }
+}
+
+.promo__text a {
+  padding: 20px 55px;
+  border: 4px solid $color-default-white;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.promo__social {
+  align-self: flex-end;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.promo__social a {
+  display: inline-block;
+  padding: 10px;
+  margin-right: -10px;
+}
