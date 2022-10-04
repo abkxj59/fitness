@@ -1,0 +1,46 @@
+.video {
+  background-color: $color-default-black;
+}
+
+.video__media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+
+  @include vp-1199 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video__button {
+  border: none;
+  background-color: $color-transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: content-box;
+
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+  }
+}
+
+.video__button img {
+  width: 100%;
+}
+
+.video:hover .video__button {
+  text-shadow: 0px 0px 6px $color-default-black;
+  box-shadow: 0px 0px 6px $color-default-black;
+}
+
+.gym__video-button:active svg {
+  stroke: blue;
+}

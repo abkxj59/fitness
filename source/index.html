@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Тренажёрный зал, Групповые занятия, Кардио-зона">
     <title>SUPERGYM - Фитнес-центр</title>
 
@@ -48,8 +48,8 @@
           </div>
           <!--1x: 500px; 2x: 1000px -->
           <picture>
-            <!-- <source type="image/webp" media="(max-width: 1199px)" srcset="img/promo-photo-tablet.webp 1x, img/promo-photo-tablet@2x.webp 2x"> -->
-            <!-- <source type="image/webp" srcset="img/promo-photo-desktop.webp 1x, img/promo-photo-desktop@2x.webp 2x"> -->
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/promo-photo-tablet.webp 1x, img/promo-photo-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/promo-photo-desktop.webp 1x, img/promo-photo-desktop@2x.webp 2x">
 
             <source media="(max-width: 1199px)" srcset="img/promo-photo-tablet.jpg 1x, img/promo-photo-tablet@2x.jpg 2x">
             <img src="img/promo-photo-desktop.jpg" srcset="img/promo-photo-desktop@2x.jpg 2x" width="500" height="556" alt="супер тренер">
@@ -75,24 +75,137 @@
           <div class="gym__text">
             <h2 class="page__section-heading gym__heading">Тренажерный зал</h2>
             <h3 class="gym__description">Просторный зал площадью 900 кв/м</h3>
-            <p class="gym__paragraph">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-            <p class="gym__paragraph gym__paragraph--desktop">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            <p class="gym__paragraph">Supergym – самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для&nbsp;укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для&nbsp;всех спортсменов.</p>
+            <p class="gym__paragraph gym__paragraph--desktop">В&nbsp;зале расположены отдельная зона для&nbsp;Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для&nbsp;различных видов групповых занятий.</p>
           </div>
           <div class="gym__pic-wrapper">
+            <!-- 1x: 660px; 2x: 1320px-->
             <picture>
-              <!-- <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x"> -->
-              <!-- <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x"> -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gym-desktop.webp 1x, img/gym-desktop@2x.webp 2x">
 
-              <!-- <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x"> -->
+              <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
               <img src="img/gym-desktop.jpg" srcset="img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="тренажёрный зал">
             </picture>
           </div>
-          <video width="364" height="228" poster="img/video-poster.jpg" src="https://www.youtube.com/watch?v=9TZXsZItgdw"></video>
+          <div class="gym__video video">
+            <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+              <!-- 1x: 364px; 2x: 728px-->
+              <picture>
+                <source type="image/webp" srcset="img/video-poster.webp 1x, img/video-poster@2x.webp 2x">
+                <img class="video__media" src="img/video-poster.jpg"  width="364" height="228" alt="тренажёрный зал">
+              </picture>
+            </a>
+            <button type="button" class="video__button">
+              <img src="img/svg/play-button.svg" width="100" height="100" alt="">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section subscriptions subscriptions--nojs">
+        <div class="subscriptions__container container">
+        <picture>
+          <source type="image/webp" srcset="img/weights.webp 1x, img/weights@2x.webp 2x">
+          <img class="subscriptions__weights" src="img/weights.png" srcset="img/weights@2x.png" alt="" width="383" height="336">
+        </picture>
+          <h2 class="page__section-heading subscriptions__heading">Абонементы</h2>
+          <ul class="subscriptions__time">
+            <li class="subscriptions__time-item">
+              <button class="subscriptions__time-button subscriptions__time-button--1-month subscriptions__time-button--active" type="button">1 месяц</button>
+            </li>
+            <li class="subscriptions__time-item">
+              <button class="subscriptions__time-button subscriptions__time-button--6-months" type="button">6 месяцев</button>
+            </li>
+            <li class="subscriptions__time-item">
+              <button class="subscriptions__time-button subscriptions__time-button--12-months" type="button">12 месяцев</button>
+            </li>
+          </ul>
+          <ul class="subscriptions__list subscriptions__list--1-month subscriptions__list--active">
+            <li class="subscriptions__item card">
+              <div class="card__wrapper">
+                <h3 class="card__heading">С тренером</h3>
+                <p class="card__description">12 занятий</p>
+                <p class="card__price" data-value="5000">5000<span class="card__rouble">i</span></p>
+                <a href="#" class="card__link">Купить абонемент</a>
+              </div>
+            </li>
+            <li class="subscriptions__item card">
+              <div class="card__wrapper">
+                <h3 class="card__heading">Дневной</h3>
+                <p class="card__description">с 8:00 до 17:00</p>
+                <p class="card__price" data-value="1700">1700<span class="card__rouble">i</span></p>
+                <a href="#" class="card__link">Купить абонемент</a>
+              </div>
+            </li>
+            <li class="subscriptions__item card">
+              <div class="card__wrapper">
+                <h3 class="card__heading">Полный день</h3>
+                <p class="card__description">с 8:00 до 22:00</p>
+                <p class="card__price" data-value="2700">2700<span class="card__rouble">i</span></p>
+                <a href="#" class="card__link">Купить абонемент</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="subscriptions__list subscriptions__list--6-months">
+            <li class="subscriptions__item card">
+              <div class="card__wrapper">
+                <h3 class="card__heading">С тренером</h3>
+                <p class="card__description">72 занятий</p>
+                <p class="card__price" data-value="28000">28000<span class="card__rouble">i</span></p>
+                <a href="#" class="card__link">Купить абонемент</a>
+              </div>
+            </li>
+            <li class="subscriptions__item card">
+              <div class="card__wrapper">
+                <h3 class="card__heading">Дневной</h3>
+                <p class="card__description">с 8:00 до 17:00</p>
+                <p class="card__price" data-value="9500">9500<span class="card__rouble">i</span></p>
+                <a href="#" class="card__link">Купить абонемент</a>
+              </div>
+            </li>
+            <li class="subscriptions__item card">
+              <div class="card__wrapper">
+                <h3 class="card__heading">Полный день</h3>
+                <p class="card__description">с 8:00 до 22:00</p>
+                <p class="card__price" data-value="15000">15000<span class="card__rouble">i</span></p>
+                <a href="#" class="card__link">Купить абонемент</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="subscriptions__list subscriptions__list--12-months">
+            <li class="subscriptions__item card">
+              <div class="card__wrapper">
+                <h3 class="card__heading">С тренером</h3>
+                <p class="card__description">144 занятий</p>
+                <p class="card__price" data-value="50000">50000<span class="card__rouble">i</span></p>
+                <a href="#" class="card__link">Купить абонемент</a>
+              </div>
+            </li>
+            <li class="subscriptions__item card">
+              <div class="card__wrapper">
+                <h3 class="card__heading">Дневной</h3>
+                <p class="card__description">с 8:00 до 17:00</p>
+                <p class="card__price" data-value="17000">17000<span class="card__rouble">i</span></p>
+                <a href="#" class="card__link">Купить абонемент</a>
+              </div>
+            </li>
+            <li class="subscriptions__item card">
+              <div class="card__wrapper">
+                <h3 class="card__heading">Полный день</h3>
+                <p class="card__description">с 8:00 до 22:00</p>
+                <p class="card__price" data-value="27000">27000<span class="card__rouble">i</span></p>
+                <a href="#" class="card__link">Купить абонемент</a>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
 
     <!-- <script src="js/vendor.min.js"></script> -->
-    <!-- <script src="js/main.min.js"></script> -->
+    <script src="js/main.min.js"></script>
   </body>
 </html>

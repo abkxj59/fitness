@@ -12,12 +12,24 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
+$color-basic-red: #ed0233;
+$color-special-red: #d10a42;
 $color-basic-blue: #102654;
+$color-light-blue: #103aae;
+$color-basic-grey: #f8f9fC;
+$color-light-grey: #e8e8e8;
+
+$bar-grey: rgba(120, 120, 120, 0.2);
+
 
 // Gradient
 
 $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$basic-gradient: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$promo-conic-gradient: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$basic-gradient: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+$diagonal-gradient: linear-gradient(135deg, #D10A42 0%, #003EB7 100%);
+$play-gradient: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+$play-hover-gradient: linear-gradient(90deg, #003D85 25.38%, #B80027 74.89%);
 
 // Typography
 // ---------------------------------

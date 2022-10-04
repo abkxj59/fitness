@@ -659,6 +659,16 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
+.page__section-heading {
+  font-family: 'Bebas Neue';
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 .page-header {
   position: absolute;
   top: 0;
@@ -821,12 +831,6 @@ button,
 }
 
 .gym h2 {
-  font-family: 'Bebas Neue';
-  font-weight: 700;
-  font-size: 49px;
-  line-height: 49px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   margin-top: 51px;
   margin-bottom: 0;
 }
@@ -844,10 +848,218 @@ button,
   margin: 8px 0;
 }
 
-.gym video {
+.gym__video {
   position: absolute;
   top: 288px;
   left: 457px;
+  width: 364px;
+  height: 228px;
+}
+
+.video {
+  background-color: #000000;
+}
+
+.video__media {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: none;
+}
+
+.video__button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.video__button img {
+  width: 100%;
+}
+
+.video:hover .video__button {
+  text-shadow: 0px 0px 6px #000000;
+  -webkit-box-shadow: 0px 0px 6px #000000;
+  box-shadow: 0px 0px 6px #000000;
+}
+
+.gym__video-button:active svg {
+  stroke: blue;
+}
+
+.subscriptions {
+  background-color: #f8f9fC;
+  padding: 120px 0;
+  color: #102654;
+  overflow: hidden;
+}
+
+.subscriptions__container {
+  position: relative;
+  z-index: 0;
+  text-align: center;
+}
+
+.subscriptions__weights {
+  position: absolute;
+  bottom: -190px;
+  right: -220px;
+  z-index: -1;
+}
+
+.subscriptions__time {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 35px auto 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.subscriptions__time:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(120, 120, 120, 0.2);
+}
+
+.subscriptions__time-item {
+  display: inline-block;
+  margin-right: 43px;
+}
+
+.subscriptions__time-item:last-child {
+  margin-right: 0;
+}
+
+.subscriptions__time-button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: inherit;
+  padding: 0;
+  padding-bottom: 10px;
+  font-size: 20px;
+  line-height: 150%;
+  opacity: 0.5;
+}
+
+.subscriptions__time-button:hover,
+.subscriptions__time-button--active {
+  border-bottom: 2px solid #d10a42;
+  opacity: 1;
+}
+
+.subscriptions__list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  margin-top: 37px;
+  padding: 0;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.subscriptions__list--active {
+  display: -ms-grid;
+  display: grid;
+}
+
+.subscriptions--nojs .subscriptions__list {
+  display: -ms-grid;
+  display: grid;
+}
+
+.card {
+  background-color: #ffffff;
+}
+
+.card:hover,
+.card:active {
+  background: -o-linear-gradient(315deg, #D10A42 0%, #003EB7 100%);
+  background: linear-gradient(135deg, #D10A42 0%, #003EB7 100%);
+}
+
+.card__wrapper {
+  margin: 7px;
+  background-color: #ffffff;
+}
+
+.card h3 {
+  margin: 0;
+  padding-top: 56px;
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.card__description {
+  margin-top: 10px;
+  margin-bottom: 65px;
+}
+
+.card__price {
+  display: block;
+  margin-bottom: 28px;
+  margin-left: 5px;
+  position: relative;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  color: #103aae;
+  z-index: 0;
+}
+
+.card__price::before {
+  position: absolute;
+  z-index: -1;
+  content: attr(data-value);
+  top: -20px;
+  color: #e8e8e8;
+  font-size: 100px;
+  opacity: 0.48;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.card .card__rouble {
+  display: inline;
+  font-family: "Rouble", "Arial", sans-serif;
+  color: #102654;
+  margin-left: 10px;
+}
+
+.card a {
+  display: inline-block;
+  border: 2px solid #102654;
+  text-transform: uppercase;
+  padding: 25px 45px;
+  margin-bottom: 58px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+}
+
+.card a:hover {
+  background: -o-linear-gradient(353deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+  border: none;
+  padding: 27px 47px;
+  color: #ffffff;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -860,6 +1072,11 @@ button,
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
+  }
+
+  .page__section-heading {
+    font-size: 42px;
+    line-height: 42px;
   }
 
   .page-header {
@@ -919,7 +1136,7 @@ button,
 
   .gym {
     padding-top: 100px;
-    padding-bottom: 183px;
+    padding-bottom: 185px;
   }
 
   .gym__container {
@@ -935,8 +1152,6 @@ button,
 
   .gym h2 {
     margin-top: 0;
-    font-size: 42px;
-    line-height: 42px;
   }
 
   .gym h3 {
@@ -959,7 +1174,7 @@ button,
     padding-top: 50.5%;
   }
 
-  .gym img {
+  .gym__pic-wrapper img {
     position: absolute;
     top: 0;
     width: 100%;
@@ -968,17 +1183,69 @@ button,
     object-fit: cover;
   }
 
-  .gym video {
-    width: 266px;
-    height: 167px;
-    top: 487px;
+  .gym__video {
+    width: 34.6%;
+    height: 0;
+    padding-top: 21.7%;
+    top: 85.7%;
     left: 32.6%;
+  }
+
+  .video__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video__button {
+    width: 73px;
+    height: 73px;
+  }
+
+  .subscriptions {
+    padding: 100px 0;
+  }
+
+  .subscriptions__weights {
+    bottom: -175px;
+    right: -55px;
+    -webkit-transform: scale(90%);
+    -ms-transform: scale(90%);
+    transform: scale(90%);
+  }
+
+  .subscriptions__time {
+    margin: 30px auto 0;
+  }
+
+  .subscriptions__time-item {
+    margin-right: 52px;
+  }
+
+  .subscriptions__time-button {
+    font-size: 18px;
+  }
+
+  .subscriptions__list {
+    -ms-grid-columns: 65.2%;
+    grid-template-columns: 65.2%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 45px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .page__section-heading {
+    font-size: 32px;
+    line-height: 32px;
   }
 
   .page-header {
@@ -1036,8 +1303,105 @@ button,
     display: none;
   }
 
-  .gym h2 {
-    font-size: 32px;
-    line-height: 32px;
+  .gym {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .gym__container {
+    padding: 0;
+  }
+
+  .gym__text {
+    padding: 0 15px;
+    text-align: start;
+    margin-bottom: 34px;
+  }
+
+  .gym h3 {
+    margin-top: 6px;
+    margin-bottom: 25px;
+  }
+
+  .gym p {
+    max-width: none;
+  }
+
+  .gym__pic-wrapper {
+    min-height: 313px;
+    padding-top: 97.8%;
+  }
+
+  .gym__video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    padding-top: 52.2%;
+    margin-top: 40px;
+  }
+
+  .subscriptions {
+    padding: 70px 0;
+  }
+
+  .subscriptions__weights {
+    display: none;
+  }
+
+  .subscriptions__time {
+    margin: 20px 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .subscriptions__time-item {
+    margin-right: 0;
+  }
+
+  .subscriptions__time-button {
+    font-size: 16px;
+    padding-bottom: 13px;
+  }
+
+  .subscriptions__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-top: 34px;
+  }
+
+  .card h3 {
+    padding-top: 44px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .card__description {
+    margin-bottom: 53px;
+  }
+
+  .card__price {
+    font-size: 48px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+  }
+
+  .card__price::before {
+    font-size: 80px;
+  }
+
+  .card .card__rouble {
+    margin-left: 5px;
+  }
+
+  .card a {
+    margin-bottom: 45px;
   }
 }
