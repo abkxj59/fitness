@@ -2,6 +2,22 @@
   font-family: $font-roboto;
 }
 
+.page__body {
+  overflow-x: hidden;
+}
+
+.page__section {
+  padding: 120px 0;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
+}
+
 .page__section-heading {
   font-family: 'Bebas Neue';
   font-weight: 700;
