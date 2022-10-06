@@ -1,0 +1,144 @@
+.feature {
+  display: flex;
+  padding-top: 71px;
+
+  &:nth-child(odd) {
+    padding-left: 25px;
+
+    @include vp-1199 {
+      padding-left: 0;
+    }
+  }
+
+  @include vp-1199 {
+    padding-top: 54px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 17px;
+  }
+}
+
+.feature--main {
+  flex-direction: column;
+  align-items: center;
+  padding: 51px 25px 10px;
+  background-color: $color-special-blue;
+  color: $color-default-white;
+  border: none;
+  text-align: center;
+
+  @include vp-1199 {
+    padding: 33px 0 10px;
+  }
+
+  @include vp-767 {
+    justify-content: flex-start;
+    padding: 38px 0 10px;
+  }
+}
+
+.feature dl {
+  margin: 0;
+  margin-right: 29px;
+
+  @include vp-767 {
+    margin-right: 0;
+  }
+}
+
+.feature--main dl {
+  margin: 0;
+}
+
+.feature dt {
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 100%;
+  background-image: $feature-gradient;
+  background-clip: text;
+  color: $color-transparent;
+
+  @include vp-1199 {
+    font-size: 58px;
+  }
+}
+
+.feature--main dt {
+  color:  $color-default-white;
+
+  @include vp-1199 {
+    font-size: 74px;
+  }
+}
+
+.feature dd {
+  margin: 0;
+  margin-top: -3px;
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-neon-blue;
+}
+
+.feature--main dd {
+  margin-top: 5px;
+  color: $color-default-white;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 26px;
+
+  @include vp-1199 {
+    margin-top: 0;
+    font-size: 22px;
+  }
+
+  @include vp-767 {
+    margin-top: -6px;
+  }
+}
+
+.feature h3 {
+  margin: 0;
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 150%;
+
+  @include vp-1199 {
+    font-size: 20px;
+  }
+}
+
+.feature p {
+  margin-top: 5px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+
+  @include vp-1199 {
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    margin-top: 3px;
+    padding: 0 30px;
+  }
+}
+
+.feature--main p {
+  margin-top: 33px;
+
+  @include vp-1199 {
+    padding: 0 130px;
+    margin-top: 15px;
+  }
+
+  @include vp-767 {
+    margin-top: 10px;
+    padding: 0 55px;
+  }
+}
