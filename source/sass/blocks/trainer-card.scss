@@ -1,0 +1,86 @@
+.trainer-card {
+  position: relative;
+  height: 100%;
+
+}
+
+.trainer-card h3 {
+  position: absolute;
+  bottom: 24px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: $color-default-white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.trainer-card:hover h3,
+.trainer-card:active h3 {
+  z-index: 2;
+  top: 52px;
+}
+
+.trainer-card__pic-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.trainer-card img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trainer-card__text-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.trainer-card__text {
+  // height: 294px;
+  top: 0;
+  position: absolute;
+  // overflow: visible;
+  // display: none;
+  width: 100%;
+  // min-height: 100%;
+  padding-top: 58px;
+  padding-bottom: 10px;
+  background-color: rgba($color: $color-basic-blue, $alpha: 0.89);
+  color: $color-default-white;
+}
+
+.trainer-card:hover .trainer-card__text,
+.trainer-card:focus-within .trainer-card__text {
+  display: block;
+}
+
+.trainer-card p {
+  text-align: center;
+  color: $color-special-grey;
+}
+
+.trainer-card ul {
+  list-style: disc;
+  padding-left: 68px;
+  padding-right: 15px;
+  margin-top: 33px;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.trainer-card li {
+  padding-left: 3px;
+  margin-bottom: 13px;
+
+  // &::marker {
+  //   margin-right: 10px;
+  // }
+}

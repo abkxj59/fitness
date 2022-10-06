@@ -1,5 +1,6 @@
-.card {
+.subscription-card {
   background-color: $color-default-white;
+  padding: 7px;
 
   &:hover,
   &:active {
@@ -7,12 +8,11 @@
   }
 }
 
-.card__wrapper {
-  margin: 7px;
+.subscription-card__wrapper {
   background-color: $color-default-white;
 }
 
-.card h3 {
+.subscription-card h3 {
   margin: 0;
   padding-top: 56px;
   font-size: 26px;
@@ -25,7 +25,7 @@
   }
 }
 
-.card__description {
+.subscription-card__description {
   margin-top: 10px;
   margin-bottom: 65px;
 
@@ -34,7 +34,7 @@
   }
 }
 
-.card__price {
+.subscription-card__price {
   display: block;
   margin-bottom: 28px;
   margin-left: 5px;
@@ -68,7 +68,7 @@
   }
 }
 
-.card .card__rouble {
+.subscription-card .subscription-card__rouble {
   display: inline;
   font-family: $ff-rouble;
   color: $color-basic-blue;
@@ -79,7 +79,7 @@
   }
 }
 
-.card a {
+.subscription-card a {
   display: inline-block;
   border: 2px solid $color-basic-blue;
   text-transform: uppercase;

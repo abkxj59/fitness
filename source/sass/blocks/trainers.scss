@@ -1,0 +1,17 @@
+.trainers {
+  padding-top: 0;
+}
+
+.trainers__list {
+  list-style: none;
+  padding: 0;
+  // display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  // gap: 40px;
+  margin-top: 51px;
+  height: 294px;
+}
+
+.trainers__item {
+  width: 260px;
+}
