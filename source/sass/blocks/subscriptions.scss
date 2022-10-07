@@ -33,7 +33,7 @@
   margin: 35px auto 0;
   width: fit-content;
 
-  &:before {
+  &::before {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -119,9 +119,9 @@
     margin-top: 34px;
   }
 
-    &--active {
-      display: grid;
-    }
+  &--active {
+    display: grid;
+  }
 }
 
 .subscriptions--nojs .subscriptions__list {

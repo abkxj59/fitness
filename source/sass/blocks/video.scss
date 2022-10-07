@@ -37,10 +37,10 @@
 }
 
 .video:hover .video__button {
-  text-shadow: 0px 0px 6px $color-default-black;
-  box-shadow: 0px 0px 6px $color-default-black;
+  text-shadow: 0 0 6px $color-default-black;
+  box-shadow: 0 0 6px $color-default-black;
 }
 
 .gym__video-button:active svg {
-  stroke: blue;
+  stroke: $color-neon-blue;
 }

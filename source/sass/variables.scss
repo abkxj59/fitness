@@ -1,7 +1,7 @@
-// Colors
+// colors
 // ---------------------------------
 
-// Default
+// default
 
 $color-default-black:               #000000;
 $color-default-white:               #ffffff;
@@ -10,15 +10,16 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-torch-red:                   #ff1553;
 $color-basic-red: #ed0233;
 $color-special-red: #d10a42;
 $color-basic-blue: #102654;
 $color-light-blue: #103aae;
 $color-deep-blue: #000145;
+$color-dark-blue: #030a1a;
 $color-neon-blue: #2e35ac;
 $color-special-blue: #1c3374;
-$color-basic-grey: #f8f9fC;
+$color-form-border: #74819c;
+$color-basic-grey: #f8f9fc;
 $color-special-grey: #b6bdcc;
 $color-light-grey: #e8e8e8;
 $slider-grey: #afafaf;
@@ -28,29 +29,29 @@ $bar-grey: rgba(120, 120, 120, 0.2);
 // Gradient
 
 $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$promo-conic-gradient: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
-$basic-gradient: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
-$feature-gradient: linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
-$diagonal-gradient: linear-gradient(135deg, #D10A42 0%, #003EB7 100%);
-$play-gradient: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
-$play-hover-gradient: linear-gradient(90deg, #003D85 25.38%, #B80027 74.89%);
+$promo-conic-gradient: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$basic-gradient: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+$feature-gradient: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+$diagonal-gradient: linear-gradient(135deg, #d10a42 0%, #003eb7 100%);
+$play-gradient: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+$play-hover-gradient: linear-gradient(90deg, #003d85 25.38%, #b80027 74.89%);
 
 // Typography
 // ---------------------------------
 
-$font-bebas: "Bebas Neue", "Tahoma", sans-serif;
-$font-roboto: "Roboto Condensed", "Arial", sans-serif;
+$font-bebas: "bebas Neue", "Tahoma", sans-serif;
+$font-roboto: "Roboto condensed", "arial", sans-serif;
 
 // переменная используемая в html для подключения скейлинга
 $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble:                         "Rouble", "Arial", sans-serif;
+$ff-rouble:                         "Rouble", "arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-placeholder:                    "Placeholder", "arial", sans-serif;
 
-// Animation
+// animation
 // ---------------------------------
 
 $tf-default:                        ease;

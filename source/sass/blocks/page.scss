@@ -1,5 +1,6 @@
 .page {
   font-family: $font-roboto;
+  scroll-behavior: smooth;
 }
 
 .page__body {
@@ -19,7 +20,7 @@
 }
 
 .page__section-heading {
-  font-family: 'Bebas Neue';
+  font-family: $font-bebas;
   font-weight: 700;
   font-size: 49px;
   line-height: 49px;
@@ -37,5 +38,14 @@
   @include vp-767 {
     font-size: 32px;
     line-height: 32px;
+  }
+}
+
+.page__sections-connector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include vp-1199 {
+    grid-template-columns: auto;
   }
 }

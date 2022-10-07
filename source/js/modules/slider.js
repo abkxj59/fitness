@@ -1,24 +1,22 @@
 const trainers = document.querySelector('.trainers');
+const reviews = document.querySelector('.reviews');
 
 trainers.classList.remove('trainers--nojs');
+reviews.classList.remove('reviews--nojs');
 
 const trainersSlider = new Swiper('#trainers-slider', {
-  // setWrapperSize: true,
   loop: true,
 
   breakpoints: {
     320: {
-      // width: 200,
       slidesPerView: 1,
       spaceBetween: 47,
     },
     768: {
-      // width: 600,
       slidesPerView: 2,
       spaceBetween: 30,
     },
     1200: {
-      // width: 1200,
       slidesPerView: 4,
       spaceBetween: 40,
     },
@@ -29,7 +27,20 @@ const trainersSlider = new Swiper('#trainers-slider', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.trainers__slider-button--next',
+    prevEl: '.trainers__slider-button--prev',
+  },
+});
+
+const reviewsSlider = new Swiper('#reviews-slider', {
+  // loop: false,
+  watchOverflow: true,
+
+  slidesPerView: 1,
+  spaceBetween: 60,
+
+  navigation: {
+    nextEl: '.reviews__slider-button--next',
+    prevEl: '.reviews__slider-button--prev',
   },
 });
