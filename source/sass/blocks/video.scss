@@ -25,6 +25,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: content-box;
+  cursor: pointer;
 
   @include vp-1199 {
     width: 73px;

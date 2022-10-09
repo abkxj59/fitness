@@ -102,4 +102,8 @@
 
 .contacts a {
   color: inherit;
+
+  &:hover {
+    text-shadow: 0 0 6px $color-neon-blue;
+  }
 }

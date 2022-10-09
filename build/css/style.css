@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /* stylelint-disable */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1531,6 +1529,17 @@ button,
 
 .page__body {
   overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .page__section {
@@ -1555,6 +1564,10 @@ button,
   grid-template-columns: 1fr 1fr;
 }
 
+.page__footer {
+  margin-top: auto;
+}
+
 .page-header {
   position: absolute;
   top: 0;
@@ -1569,6 +1582,11 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.page-header__contacts-wrapper {
+  max-width: 160px;
+  text-align: end;
 }
 
 .page-header a {
@@ -1586,10 +1604,7 @@ button,
 
 .page-header a:hover {
   text-shadow: 0 0 6px #000000;
-  -webkit-box-shadow: 0 0 6px #000000;
-  box-shadow: 0 0 6px #000000;
   color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .promo {
@@ -1632,7 +1647,7 @@ button,
 
 .promo h1 {
   margin-top: 0;
-  margin-bottom: 68px;
+  margin-bottom: 50px;
   text-transform: uppercase;
   font-family: "bebas Neue", "Tahoma", sans-serif;
   font-weight: 700;
@@ -1672,6 +1687,10 @@ button,
 }
 
 .promo__text a {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 395px;
   padding: 20px 55px;
   border: 4px solid #ffffff;
   font-weight: 700;
@@ -1693,6 +1712,7 @@ button,
 
 .promo__social a {
   display: inline-block;
+  vertical-align: middle;
   padding: 10px;
   margin-right: -10px;
 }
@@ -1764,6 +1784,7 @@ button,
   transform: translate(-50%, -50%);
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
+  cursor: pointer;
 }
 
 .video__button img {
@@ -1783,19 +1804,32 @@ button,
 .subscriptions {
   background-color: #f8f9fc;
   color: #102654;
+  position: relative;
+  z-index: 0;
 }
 
 .subscriptions__container {
   text-align: center;
   position: relative;
-  z-index: 0;
+  z-index: 1;
+}
+
+.subscriptions__weights-wrapper {
+  position: absolute;
+  bottom: -70px;
+  left: 82%;
+  right: 0;
+  height: 336px;
+  z-index: -1;
+  overflow: hidden;
 }
 
 .subscriptions__weights {
-  position: absolute;
-  bottom: -190px;
-  right: -220px;
-  z-index: -1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: left top;
+  object-position: left top;
+  height: 100%;
 }
 
 .subscriptions__time {
@@ -1820,6 +1854,7 @@ button,
 
 .subscriptions__time-item {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 43px;
 }
 
@@ -1832,16 +1867,18 @@ button,
   background-color: rgba(255, 255, 255, 0);
   color: inherit;
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   font-size: 20px;
   line-height: 150%;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .subscriptions__time-button:hover,
 .subscriptions__time-button--active {
   border-bottom: 2px solid #d10a42;
   opacity: 1;
+  padding-bottom: 10px;
 }
 
 .subscriptions__list {
@@ -1927,6 +1964,7 @@ button,
 
 .subscription-card a {
   display: inline-block;
+  vertical-align: middle;
   border: 2px solid #102654;
   text-transform: uppercase;
   padding: 25px 45px;
@@ -1937,7 +1975,8 @@ button,
   letter-spacing: 0.05em;
 }
 
-.subscription-card a:hover {
+.subscription-card a:hover,
+.subscription-card a:focus {
   background: -o-linear-gradient(353deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
   border: none;
@@ -2005,6 +2044,7 @@ button,
 
 .supergames dd {
   display: inline-block;
+  vertical-align: middle;
   border-top: 1px solid #ffffff;
   margin: 0;
   margin-bottom: 20px;
@@ -2013,14 +2053,14 @@ button,
   line-height: 50px;
 }
 
-.supergames__date::after {
+.supergames__date-small {
   display: inline-block;
+  vertical-align: middle;
   max-width: 40px;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   margin-left: 7px;
-  content: "Марта 2019";
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -2045,7 +2085,8 @@ button,
   letter-spacing: 0.05em;
 }
 
-.supergames a:hover {
+.supergames a:hover,
+.supergames a:focus {
   background-color: #ffffff;
   color: #102654;
 }
@@ -2064,6 +2105,7 @@ button,
   max-width: 1160px;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
+  padding: 0 40px;
   margin: 0 auto;
   margin-top: 51px;
 }
@@ -2107,7 +2149,7 @@ button,
 }
 
 .trainer-card:hover h3,
-.trainer-card:active h3 {
+.trainer-card:focus-within h3 {
   top: 0;
   bottom: auto;
   z-index: 2;
@@ -2132,8 +2174,9 @@ button,
 
 .trainer-card__text-wrapper {
   position: relative;
-  height: 294px;
   width: 100%;
+  height: 0;
+  padding-top: 113%;
   overflow: auto;
 }
 
@@ -2402,6 +2445,10 @@ button,
   letter-spacing: 0.05em;
 }
 
+.discount__item a:hover {
+  text-shadow: 0 0 6px #2e35ac;
+}
+
 .discount__item--big a {
   border-bottom: 1px solid #ffffff;
   font-size: 14px;
@@ -2436,6 +2483,9 @@ button,
 }
 
 .reviews__list {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   list-style: none;
   padding: 0 66px;
   margin: 50px 0;
@@ -2518,6 +2568,7 @@ button,
 
 .callback__form input {
   display: inline-block;
+  vertical-align: top;
   width: 190px;
   padding: 4px 0 6px;
   border: none;
@@ -2565,6 +2616,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border: 3px solid #ffffff;
+  cursor: pointer;
 }
 
 .callback button:hover {
@@ -2624,6 +2676,10 @@ button,
 
 .contacts a {
   color: inherit;
+}
+
+.contacts a:hover {
+  text-shadow: 0 0 6px #2e35ac;
 }
 
 .page-footer {
@@ -2735,6 +2791,10 @@ button,
     height: 17px;
   }
 
+  .page-header__contacts-wrapper {
+    max-width: 140px;
+  }
+
   .page-header a {
     font-size: 24px;
     letter-spacing: 0.02em;
@@ -2755,7 +2815,7 @@ button,
   }
 
   .promo h1 {
-    margin-bottom: 55px;
+    margin-bottom: 37px;
     font-size: 86px;
     line-height: 86px;
   }
@@ -2768,6 +2828,7 @@ button,
   }
 
   .promo__text a {
+    max-width: 323px;
     padding: 20px 30px;
   }
 
@@ -2850,12 +2911,16 @@ button,
     height: 73px;
   }
 
+  .subscriptions__weights-wrapper {
+    height: 303px;
+    bottom: -55px;
+    left: 60%;
+    right: 0;
+  }
+
   .subscriptions__weights {
-    bottom: -175px;
-    right: -55px;
-    -webkit-transform: scale(90%);
-    -ms-transform: scale(90%);
-    transform: scale(90%);
+    max-width: 345px;
+    height: 100%;
   }
 
   .subscriptions__time {
@@ -2904,7 +2969,7 @@ button,
     margin-bottom: 7px;
   }
 
-  .supergames__date::after {
+  .supergames__date-small {
     font-size: 10px;
     line-height: 120%;
     margin-left: 3px;
@@ -2934,6 +2999,7 @@ button,
   }
 
   .trainers__slider-container {
+    padding: 0;
     margin: 0 65px;
     margin-top: 40px;
   }
@@ -2945,7 +3011,6 @@ button,
   }
 
   .trainer-card__text-wrapper {
-    width: 100%;
     height: 0;
     padding-top: 110%;
   }
@@ -3176,6 +3241,10 @@ button,
     height: 15px;
   }
 
+  .page-header__contacts-wrapper {
+    max-width: 120px;
+  }
+
   .page-header a {
     font-size: 20px;
   }
@@ -3260,7 +3329,7 @@ button,
     margin-top: 40px;
   }
 
-  .subscriptions__weights {
+  .subscriptions__weights-wrapper {
     display: none;
   }
 
@@ -3354,7 +3423,7 @@ button,
   }
 
   .trainer-card:hover h3,
-  .trainer-card:active h3 {
+  .trainer-card:focus-within h3 {
     padding-top: 43px;
   }
 

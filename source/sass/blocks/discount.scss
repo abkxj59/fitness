@@ -130,6 +130,10 @@
   @include vp-767 {
     margin: auto auto 0;
   }
+
+  &:hover {
+    text-shadow: 0 0 6px $color-neon-blue;
+  }
 }
 
 .discount__item--big a {

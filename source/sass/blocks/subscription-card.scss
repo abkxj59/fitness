@@ -81,6 +81,7 @@
 
 .subscription-card a {
   display: inline-block;
+  vertical-align: middle;
   border: 2px solid $color-basic-blue;
   text-transform: uppercase;
   padding: 25px 45px;
@@ -94,7 +95,8 @@
     margin-bottom: 45px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: $basic-gradient;
     border: none;
     padding: 27px 47px;

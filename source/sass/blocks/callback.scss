@@ -55,6 +55,7 @@
 
 .callback__form input {
   display: inline-block;
+  vertical-align: top;
   width: 190px;
   padding: 4px 0 6px;
   border: none;
@@ -91,6 +92,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border: 3px solid $color-default-white;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-default-white;

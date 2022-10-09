@@ -27,10 +27,12 @@
 .trainers__slider-container {
   max-width: 1160px;
   box-sizing: content-box;
+  padding: 0 40px;
   margin: 0 auto;
   margin-top: 51px;
 
   @include vp-1199 {
+    padding: 0;
     margin: 0 65px;
     margin-top: 40px;
   }

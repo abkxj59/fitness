@@ -10,6 +10,7 @@ function generateURL(id) {
 function createIframe(id) {
   let iframe = document.createElement('iframe');
 
+  iframe.setAttribute('title', 'video-supergym');
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'autoplay');
   iframe.setAttribute('src', generateURL(id));
@@ -20,7 +21,6 @@ function createIframe(id) {
 
 const initVideo = () => {
   const link = video.querySelector('.video__link');
-  // const media = video.querySelector('.video__media');
   const button = video.querySelector('.video__button');
   const id = VIDEO_ID;
 

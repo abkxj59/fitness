@@ -1,6 +1,6 @@
 const subscriptions = document.querySelector('.subscriptions');
-const buttons = subscriptions.querySelectorAll('.subscriptions__time-button');
-const tabs = subscriptions.querySelectorAll('.subscriptions__list');
+const buttons = document.querySelectorAll('.subscriptions__time-button');
+const tabs = document.querySelectorAll('.subscriptions__list');
 
 const initTabs = () => {
   if (subscriptions !== null) {

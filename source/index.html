@@ -27,7 +27,9 @@
             <use xlink:href="img/sprite_auto.svg#logo"></use>
           </svg>
         </a>
-        <a href="tel:88005555555">8-800-555-55-55</a>
+        <div class="page-header__contacts-wrapper">
+          <a href="tel:88005555555">8-800-555-55-55</a>
+        </div>
       </div>
     </header>
 
@@ -99,18 +101,21 @@
               </picture>
             </a>
             <button type="button" class="video__button">
-              <img src="img/svg/play-button.svg" width="100" height="100" alt="">
+              <img src="img/svg/play-button.svg" width="100" height="100" alt="play-button">
+              <span class="visually-hidden">play video</span>
             </button>
           </div>
         </div>
       </section>
 
       <section class="page__section subscriptions subscriptions--nojs" id="subscriptions">
+        <div class="subscriptions__weights-wrapper">
+          <picture>
+            <source type="image/webp" srcset="img/weights.webp 1x, img/weights@2x.webp 2x">
+            <img class="subscriptions__weights" src="img/weights.png" srcset="img/weights@2x.png" alt="" width="383" height="336">
+          </picture>
+        </div>
         <div class="subscriptions__container container">
-        <picture>
-          <source type="image/webp" srcset="img/weights.webp 1x, img/weights@2x.webp 2x">
-          <img class="subscriptions__weights" src="img/weights.png" srcset="img/weights@2x.png" alt="" width="383" height="336">
-        </picture>
           <h2 class="page__section-heading subscriptions__heading">Абонементы</h2>
           <ul class="subscriptions__time">
             <li class="subscriptions__time-item">
@@ -229,7 +234,7 @@
               <h2 class="supergames__heading page__section-heading">Super<br>games</h2>
               <dl class="supergames__schedule">
                 <dt>Дата</dt>
-                <dd class="supergames__date">7</dd>
+                <dd class="supergames__date">7<span class="supergames__date-small">Марта 2019</span></dd>
                 <dt>Время</dt>
                 <dd class="supergames__time">12:00</dd>
               </dl>
@@ -256,7 +261,7 @@
           <div class="trainers__slider-container swiper" id="trainers-slider">
             <ul class="trainers__list swiper-wrapper">
               <li class="trainers__item swiper-slide">
-                <article class="trainer-card">
+                <article class="trainer-card" tabindex="0">
                   <div class="trainer-card__pic-wrapper">
                   <!-- 1x: 260px; 2x: 520px -->
                   <picture>
@@ -281,7 +286,7 @@
               </article>
             </li>
             <li class="trainers__item swiper-slide">
-              <article class="trainer-card">
+              <article class="trainer-card" tabindex="0">
                 <div class="trainer-card__pic-wrapper">
                   <!-- 1x: 260px; 2x: 520px -->
                   <picture>
@@ -307,7 +312,7 @@
               </article>
             </li>
             <li class="trainers__item swiper-slide">
-              <article class="trainer-card">
+              <article class="trainer-card" tabindex="0">
                 <div class="trainer-card__pic-wrapper">
                   <!-- 1x: 260px; 2x: 520px -->
                   <picture>
@@ -329,7 +334,7 @@
               </article>
             </li>
             <li class="trainers__item swiper-slide">
-              <article class="trainer-card">
+              <article class="trainer-card" tabindex="0">
                 <div class="trainer-card__pic-wrapper">
                   <!-- 1x: 260px; 2x: 520px -->
                   <picture>
@@ -351,7 +356,7 @@
               </article>
             </li>
             <li class="trainers__item swiper-slide">
-              <article class="trainer-card">
+              <article class="trainer-card" tabindex="0">
                 <div class="trainer-card__pic-wrapper">
                   <!-- 1x: 260px; 2x: 520px -->
                   <picture>
@@ -373,7 +378,7 @@
               </article>
             </li>
             <li class="trainers__item swiper-slide">
-              <article class="trainer-card">
+              <article class="trainer-card" tabindex="0">
                 <div class="trainer-card__pic-wrapper">
                   <!-- 1x: 260px; 2x: 520px -->
                   <picture>
@@ -395,7 +400,7 @@
               </article>
             </li>
             <li class="trainers__item swiper-slide">
-              <article class="trainer-card">
+              <article class="trainer-card" tabindex="0">
                 <div class="trainer-card__pic-wrapper">
                   <!-- 1x: 260px; 2x: 520px -->
                   <picture>
@@ -417,7 +422,7 @@
               </article>
             </li>
             <li class="trainers__item swiper-slide">
-              <article class="trainer-card">
+              <article class="trainer-card" tabindex="0">
                 <div class="trainer-card__pic-wrapper">
                   <!-- 1x: 260px; 2x: 520px -->
                   <picture>
@@ -559,7 +564,11 @@
                     </picture>
                   </div>
                   <h3 class="reviews__name">Анна Орлова</h3>
-                  <p class="reviews__text">«Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»</p>
+                  <p class="reviews__text">
+                    «Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»
+                    <!-- «Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»
+                    «Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей» -->
+                  </p>
                 </article>
               </li>
               <li class="reviews__item swiper-slide">
@@ -617,7 +626,7 @@
                 </dl>
                 <dl>
                   <dt>Email:</dt>
-                  <dd><a href="email:omsk@supergym.ru">omsk@supergym.ru</a></dd>
+                  <dd><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></dd>
                 </dl>
               </div>
             </div>
@@ -656,21 +665,24 @@
           <ul class="page-footer__social-list">
             <li class="page-footer__social-item">
               <a class="page-footer__social-link" href="vk.com">
-                <svg width="25" height="25">
+                <svg width="25" height="25" aria-labelledby="vk-link">
+                  <title id="vk-link">vkontakte</title>
                   <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="page-footer__social-item">
               <a class="page-footer__social-link" href="ok.com">
-                <svg width="25" height="25">
+                <svg width="25" height="25" aria-labelledby="ok-link">
+                  <title id="ok-link">odnoklassniki</title>
                   <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
                 </svg>
               </a>
             </li>
             <li class="page-footer__social-item">
               <a class="page-footer__social-link" href="reddit.com">
-                <svg width="25" height="25">
+                <svg width="25" height="25" aria-labelledby="reddit-link">
+                  <title id="reddit-link">reddit</title>
                   <use xlink:href="img/sprite_auto.svg#icon-reddit"></use>
                 </svg>
               </a>
