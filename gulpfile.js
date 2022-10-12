@@ -65,13 +65,19 @@ const copySvg = () => {
 };
 
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{png,jpg,webp}', {base: 'source'})
+  return gulp.src([
+    'source/img/**/*.{png,jpg,webp}',
+    'source/favicon.ico'
+  ], {
+    base: 'source'
+  })
       .pipe(gulp.dest('build'));
 };
 
 const copy = () => {
   return gulp.src([
     'source/**.html',
+    'source/favicon.ico',
     'source/fonts/**',
     'source/img/**',
     'source/favicon/**',

@@ -31,19 +31,21 @@
 }
 
 .page-header__contacts-wrapper {
-  max-width: 160px;
   text-align: end;
+  margin-left: 100px;
 
   @include vp-1199 {
-  max-width: 140px;
+    margin-left: 50px;
   }
 
   @include vp-767 {
-    max-width: 120px;
+    margin-left: 20px;
   }
 }
 
 .page-header a {
+  display: inline-block;
+  vertical-align: middle;
   color: $color-default-white;
   font-family: $font-bebas;
   font-weight: 700;
@@ -68,4 +70,8 @@
   @include vp-767 {
     font-size: 20px;
   }
+}
+
+.page-header__contacts-wrapper a {
+  margin-left: 5px;
 }

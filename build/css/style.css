@@ -1585,11 +1585,13 @@ button,
 }
 
 .page-header__contacts-wrapper {
-  max-width: 160px;
   text-align: end;
+  margin-left: 100px;
 }
 
 .page-header a {
+  display: inline-block;
+  vertical-align: middle;
   color: #ffffff;
   font-family: "bebas Neue", "Tahoma", sans-serif;
   font-weight: 700;
@@ -1605,6 +1607,10 @@ button,
 .page-header a:hover {
   text-shadow: 0 0 6px #000000;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.page-header__contacts-wrapper a {
+  margin-left: 5px;
 }
 
 .promo {
@@ -2792,7 +2798,7 @@ button,
   }
 
   .page-header__contacts-wrapper {
-    max-width: 140px;
+    margin-left: 50px;
   }
 
   .page-header a {
@@ -3242,7 +3248,7 @@ button,
   }
 
   .page-header__contacts-wrapper {
-    max-width: 120px;
+    margin-left: 20px;
   }
 
   .page-header a {
